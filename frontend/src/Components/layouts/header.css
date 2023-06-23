@@ -1,0 +1,119 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../Images/bg4.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header {
+  padding: 100px 0;
+  height: 100vh;
+
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); */
+}
+.header-row {
+  height: 85vh;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.banner h1 {
+  color: #03045e;
+  font-size: 64px;
+  font-weight: bolder;
+}
+.banner h5 {
+  color: #000;
+  font-style: 40px;
+  font-weight: bold;
+}
+
+.banner p {
+  color: #03045e;
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans UNicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  width: 90%;
+  font-weight: 600;
+}
+
+.banner .left,
+.banner .right {
+  margin-top: 12rem;
+  height: 100%;
+  padding: 7px;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.banner .left img,
+.banner .right img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn-ex {
+  margin-top: 6rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: aliceblue;
+  text-decoration: none;
+}
+.fa-angle-down {
+  color: ghostwhite;
+  font-size: 2rem;
+  padding: 5px 0;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 767px) {
+ 
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+     
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .container-fluid {
+    padding: 0;
+    height: 100vh;
+    transform: translateY(-10%);
+  }
+  .banner .content {
+    transform: translateY(30%);
+  }
+ 
+  .banner .right,
+  .banner .left  {
+    display: none;
+  }
+  .banner h1 {
+    font-size: 2.4rem;
+    transform: translateX(25%);
+ 
+  }
+  .banner p {
+    font-size: 1rem;
+  }
+  .btn-ex {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: aliceblue;
+  }
+}

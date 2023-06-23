@@ -1,0 +1,14 @@
+{
+  "name": "invite-link",
+  "version": "1.0.0",
+  "description": "Invite Link",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pradeep",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^6.12.1"
+  }
+}

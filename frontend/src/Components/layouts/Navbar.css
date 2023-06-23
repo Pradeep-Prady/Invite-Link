@@ -1,0 +1,139 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+nav.sticky {
+  padding: 5px 100px;
+  background: #000;
+}
+nav.sticky a {
+  color: ghostwhite;
+  border-color: aliceblue;
+}
+nav.sticky a:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+nav.sticky .active a {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+nav .logo {
+  position: relative;
+
+  transition: 0.6s;
+}
+.logo img {
+  width: 200px;
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li a,
+li Link {
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+  z-index: 12;
+  border: 3px solid black;
+  padding: 4px 12px;
+  border-radius: 0.3rem;
+}
+li a:hover,
+li Link :hover {
+  background-color: #000000;
+  color: ghostwhite;
+}
+.active a,
+.active link {
+  background-color: #000000;
+  color: ghostwhite;
+}
+
+.toggle_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown_menu {
+  display: none;
+}
+
+.offcanvas-body li {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.offcanvas-body li a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 2px;
+  font-weight: 500;
+  transition: 0.6s;
+}
+.offcanvas-body li a:hover {
+  background-color: #000000;
+  color: ghostwhite;
+}
+.offcanvas-body .active a {
+  background-color: #000000;
+  color: ghostwhite;
+}
+
+@media (max-width: 992px) {
+  nav {
+    padding: 20px 20px;
+  }
+  nav.sticky {
+    padding: 5px 20px;
+  }
+  nav ul li a {
+    display: none;
+  }
+  nav .toggle_btn {
+    display: block;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  /* CSS styles for mobile devices */
+
+  .logo img {
+    width: 100px;
+  }
+}
